@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/confirm.css">
+<meta charset='UTF-8'>
+<title>ご入力内容</title>
+</head>
+<body>
+<br><hr><br>
+<H1>確認フォーム</H1>
+<br><hr><br>
+<div class="wrap">
+
+<table>
+
+<tr>
+ <td>
+ お名前
+ </td>
+ <td>
+ <?php echo $name; ?>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ フリガナ
+ </td>
+ <td>
+ <?php echo $furigana; ?>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ メール
+ </td>
+ <td>
+ <?php echo $email; ?>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ お電話
+ </td>
+ <td>
+ <?php echo $tel; ?>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ お住所
+ </td>
+ <td>
+ <?php echo $address_num; ?>
+ </td>
+</tr>
+<tr>
+ <td>
+ </td>
+ <td>
+ <?php echo $address; ?>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ ご関係　　 
+ </td>
+ <td>
+ <?php echo $relation; ?>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ 結婚式・披露宴　
+ </td>
+ <td>
+ <?php echo $attendance; ?>
+ </td>
+</tr>
+<!--
+<tr>
+  <td>
+  二次会
+  </td>
+  <td>
+  <?php echo $nijikai; ?>
+  </td>
+</tr>
+--!>
+</table><br>
+メッセージ<br>
+<?php echo $message; ?>
+</div>
+
+</br>
+</br>
+<form action='./complete.php' method='post'>
+      <INPUT type='submit' id="button" value="確認">
+        <br>
+        <INPUT type='button' id="button" onclick="javascript:history.back()" value='戻る'>
+</form>
+</body>
+</html>
